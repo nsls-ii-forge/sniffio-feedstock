@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [py<36]
+  noarch: True
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
@@ -24,8 +24,8 @@ requirements:
 
 test:
   imports:
-    - sniffio
-    - sniffio._tests
+    - {{ name }}
+    - {{ name }}._tests
 
 about:
   home: https://github.com/python-trio/sniffio
