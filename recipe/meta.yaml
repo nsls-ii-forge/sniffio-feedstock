@@ -24,8 +24,8 @@ requirements:
 
 test:
   imports:
-    - sniffio
-    - sniffio._tests
+    - {{ name }}
+    - {{ name }}._tests
 
 about:
   home: https://github.com/python-trio/sniffio
