@@ -1,13 +1,14 @@
 {% set name = "sniffio" %}
 {% set version = "1.1.0" %}
+{% set sha256 = "8e3810100f69fe0edd463d02ad407112542a11ffdc29f67db2bf3771afb87a21" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e3810100f69fe0edd463d02ad407112542a11ffdc29f67db2bf3771afb87a21
+  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -34,7 +35,3 @@ about:
   license_file: LICENSE.APACHE2
   summary: Sniff out which async library your code is running under
   doc_url: https://sniffio.readthedocs.io
-
-extra:
-  recipe-maintainers:
-    - nicoddemus
