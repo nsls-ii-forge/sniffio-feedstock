@@ -5,11 +5,11 @@ Home: https://github.com/python-trio/sniffio
 
 Package license: APACHE
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/sniffio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sniff out which async library your code is running under
 
-
+Documentation: https://sniffio.readthedocs.io
 
 Current build status
 ====================
